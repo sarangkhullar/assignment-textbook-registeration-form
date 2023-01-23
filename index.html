@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Registeration Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        #email, #password, #phone, #notes{ 
+            padding: 10px;
+            border-radius: 15px;
+            border-color: black;
+            background-color: rgba(255, 255, 255, 0.479);
+            
+        }
+
+        .button{
+            padding: 5px;
+            width: 150px;
+            background-color: rgba(8, 74, 197, 0.994);
+            color: white;
+            font-size: 16px;
+            border-radius: 15px;
+            border-color: black;
+        }
+
+
+        #dropdown{
+            padding: 4px;
+            width: 160px;
+            border-radius: 15px;
+            background-color: rgba(150, 151, 151, 0.314);
+            color: rgb(30, 24, 24);
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Registeration Form</h1>
+    <br>
+    <div class="subHeading" style="font-size: 1.2em;">
+        Enter your details below
+    </div>
+
+    <div class="detailsOne">
+        <ul>
+            <li><textarea id="email" placeholder="E-mail" rows="1" cols="25"></textarea></li>
+            <li><textarea id="password" rows="1" placeholder="Password" cols="25"></textarea></li>
+
+        </ul>
+        <h4>!Type a complex password with 8-20 characters</h4>
+
+        <ul>
+            <li><textarea id="phone" placeholder="+20 Phone Number" rows="1" cols="25"></textarea></li>
+
+        </ul>
+
+    </div>
+
+    <hr>
+
+    <div class="detailsTwo">
+        <h3><i>Enter your profession:</i></h3>
+
+        <ul>
+            <li>
+
+                <input type="radio" id="student" name="fav_language" value="HTML">
+                <label for="html">Student</label>
+
+
+                <input type="radio" id="teacher" name="fav_language" value="HTML">
+                <label for="html">Teacher</label>
+
+                <input type="radio" id="developer" name="fav_language" value="HTML">
+                <label for="html">Developer</label><br>
+
+            </li>
+
+        </ul>
+    </div>
+
+
+
+    <div class="subHeading" style="font-size: 1.2em;">
+        Choose the stage if your are (student)
+
+    </div>
+    <br>
+    <form action="">
+        <select name="cars" id="dropdown">
+            <option value="volvo">First Primary</option>
+            <option value="saab">Second</option>
+        </select>
+        <br><br>
+
+    </form>
+
+
+    <hr>
+
+    <div class="detailsThird">
+        <div class="subHeading" style="font-size: 1.2em;">
+            Enter your Birth date. <input type="date" id="birthday" name="birthday">
+        </div>
+    </div>
+
+    <hr>
+
+    <ul>
+        <li><textarea id="notes" placeholder="Any notes" rows="1" cols="25"></textarea></li>
+
+    </ul>
+<hr>
+    <br>
+    <input type="submit" class="button"value="Submit">
+    <input type="reset"  class="button" value="Reset">
+</body>
+
+</html>
